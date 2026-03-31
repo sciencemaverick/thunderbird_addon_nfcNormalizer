@@ -2,3 +2,5 @@
 *.xpi
 dist/
 tmp/
+docs/
+test-fixtures/
