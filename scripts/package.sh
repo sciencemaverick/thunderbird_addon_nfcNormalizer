@@ -18,6 +18,7 @@ zip -r "$TMP_ZIP" \
   manifest.json \
   background.js \
   src \
+  icons \
   options \
   -x '**/.DS_Store'
 

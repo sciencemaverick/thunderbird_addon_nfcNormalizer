@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Korean Attachment NFC Normalizer</title>
+  <desc id="desc">Green rounded square with a paperclip motif and NFC lettering.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B8C74"/>
+      <stop offset="100%" stop-color="#1C5E52"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <path
+    d="M44 39v34c0 10.493 8.507 19 19 19s19-8.507 19-19V48c0-6.627-5.373-12-12-12s-12 5.373-12 12v24c0 2.209 1.791 4 4 4s4-1.791 4-4V51"
+    fill="none"
+    stroke="#F7F4EA"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="10"
+  />
+  <text
+    x="64"
+    y="108"
+    fill="#F7F4EA"
+    font-family="Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+    letter-spacing="2"
+    text-anchor="middle"
+  >NFC</text>
+</svg>
