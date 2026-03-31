@@ -4,6 +4,7 @@
   "description": "Normalizes Thunderbird compose attachment display names to Unicode NFC on macOS without renaming the original file.",
   "version": "0.1.0",
   "author": "Jake + Codex",
+  "homepage_url": "https://github.com/sciencemaverick/thunderbird_addon_nfcNormalizer",
   "icons": {
     "16": "icons/icon.svg",
     "32": "icons/icon.svg",

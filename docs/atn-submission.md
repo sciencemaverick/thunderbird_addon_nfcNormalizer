@@ -32,5 +32,5 @@ Key points:
 
 ## Support / Source
 
-- Source code: set this to your GitHub repository URL
-- Support: use GitHub Issues or your preferred contact channel
+- Source code: https://github.com/sciencemaverick/thunderbird_addon_nfcNormalizer
+- Support: https://github.com/sciencemaverick/thunderbird_addon_nfcNormalizer/issues

@@ -180,6 +180,14 @@ GitHub에 올릴 때는 아래 파일들이 핵심입니다.
 
 `dist/`는 생성 산출물이므로 git 추적 대상에서 제외합니다.
 
+프로젝트 저장소:
+
+- https://github.com/sciencemaverick/thunderbird_addon_nfcNormalizer
+
+이슈 제보:
+
+- https://github.com/sciencemaverick/thunderbird_addon_nfcNormalizer/issues
+
 ## License
 
 이 프로젝트는 [MIT License](./LICENSE)를 따릅니다.
