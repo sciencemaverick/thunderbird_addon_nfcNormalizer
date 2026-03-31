@@ -176,3 +176,7 @@ GitHub에 올릴 때는 아래 파일들이 핵심입니다.
 - 테스트 자료: `test/`, `test-fixtures/`
 
 `dist/`는 생성 산출물이므로 git 추적 대상에서 제외합니다.
+
+## License
+
+이 프로젝트는 [MIT License](./LICENSE)를 따릅니다.

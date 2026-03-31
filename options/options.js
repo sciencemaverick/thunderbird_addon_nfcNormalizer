@@ -44,11 +44,11 @@ form.addEventListener("submit", async (event) => {
 resetButton.addEventListener("click", async () => {
   await browser.storage.local.set(DEFAULT_SETTINGS);
   writeForm(DEFAULT_SETTINGS);
-  setStatus("기본값으로 되돌렸습니다.");
+  setStatus("기본 설정으로 되돌렸습니다.");
 });
 
 exportLogsButton.addEventListener("click", async () => {
-  setStatus("로그 파일을 준비하는 중입니다...");
+  setStatus("진단 로그 파일을 준비하고 있습니다...");
 
   try {
     const response = await browser.runtime.sendMessage({ type: "export-logs" });
@@ -71,17 +71,17 @@ exportLogsButton.addEventListener("click", async () => {
     });
 
     URL.revokeObjectURL(objectUrl);
-    setStatus("로그 파일 저장 창을 열었습니다.");
+    setStatus("진단 로그 저장 창을 열었습니다.");
   } catch (error) {
     console.error("[nfc-normalizer] Failed to export log file.", error);
-    setStatus("로그 파일 저장에 실패했습니다.");
+    setStatus("진단 로그 저장에 실패했습니다.");
   }
 });
 
 clearLogsButton.addEventListener("click", async () => {
   try {
     await browser.runtime.sendMessage({ type: "clear-logs" });
-    setStatus("메모리 로그 버퍼를 비웠습니다.");
+    setStatus("로그 버퍼를 비웠습니다.");
   } catch (error) {
     console.error("[nfc-normalizer] Failed to clear log buffer.", error);
     setStatus("로그 버퍼를 비우지 못했습니다.");

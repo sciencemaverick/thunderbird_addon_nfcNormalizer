@@ -12,7 +12,7 @@
         <p class="eyebrow">Thunderbird Add-on</p>
         <h1>Korean Attachment NFC Normalizer</h1>
         <p class="description">
-          macOS Thunderbird compose 창에서 첨부 파일명을 NFC로 보정하는 방식과 실패 정책을 조정합니다.
+          macOS용 Thunderbird에서 첨부 파일명을 NFC로 정리하는 동작과 진단 옵션을 설정합니다.
         </p>
       </header>
 
@@ -22,7 +22,7 @@
             <input id="autoNormalizeOnAttach" name="autoNormalizeOnAttach" type="checkbox">
             <span>
               <strong>첨부 즉시 자동 보정</strong>
-              <small>파일을 첨부하자마자 파일명을 NFC로 보정합니다.</small>
+              <small>파일을 첨부하는 즉시 파일명을 NFC 형태로 정리합니다.</small>
             </span>
           </label>
 
@@ -30,7 +30,7 @@
             <input id="checkBeforeSend" name="checkBeforeSend" type="checkbox">
             <span>
               <strong>전송 직전 다시 검사</strong>
-              <small>누락된 첨부명이 있으면 전송 직전에 다시 NFC 여부를 확인합니다.</small>
+              <small>보정되지 않은 첨부가 남아 있으면 전송 전에 한 번 더 확인합니다.</small>
             </span>
           </label>
 
@@ -38,22 +38,22 @@
             <input id="cancelSendOnFailure" name="cancelSendOnFailure" type="checkbox">
             <span>
               <strong>보정 실패 시 전송 차단</strong>
-              <small>정규화 실패가 있으면 메일 전송을 취소합니다.</small>
+              <small>보정에 실패한 첨부가 있으면 메일 전송을 중단합니다.</small>
             </span>
           </label>
 
           <label class="setting">
             <input id="debugLogging" name="debugLogging" type="checkbox">
             <span>
-              <strong>Debug logging</strong>
-              <small>background console에 code point와 attachment 상태를 자세히 기록합니다.</small>
+              <strong>상세 로그 기록</strong>
+              <small>문제 분석에 도움이 되도록 첨부 상태와 code point 정보를 자세히 기록합니다.</small>
             </span>
           </label>
 
           <div class="actions">
-            <button type="submit">저장</button>
+            <button type="submit">설정 저장</button>
             <button id="reset-button" type="button" class="secondary">기본값으로 되돌리기</button>
-            <button id="export-logs-button" type="button" class="secondary">로그 파일 저장</button>
+            <button id="export-logs-button" type="button" class="secondary">진단 로그 저장</button>
             <button id="clear-logs-button" type="button" class="ghost">로그 버퍼 비우기</button>
           </div>
         </form>
