@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Korean Attachment NFC Normalizer Settings</title>
+    <link rel="stylesheet" href="./options.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Thunderbird Add-on</p>
+        <h1>Korean Attachment NFC Normalizer</h1>
+        <p class="description">
+          macOS Thunderbird compose 창에서 첨부 파일명을 NFC로 보정하는 방식과 실패 정책을 조정합니다.
+        </p>
+      </header>
+
+      <section class="card">
+        <form id="settings-form">
+          <label class="setting">
+            <input id="autoNormalizeOnAttach" name="autoNormalizeOnAttach" type="checkbox">
+            <span>
+              <strong>첨부 즉시 자동 보정</strong>
+              <small>파일을 첨부하자마자 파일명을 NFC로 보정합니다.</small>
+            </span>
+          </label>
+
+          <label class="setting">
+            <input id="checkBeforeSend" name="checkBeforeSend" type="checkbox">
+            <span>
+              <strong>전송 직전 다시 검사</strong>
+              <small>누락된 첨부명이 있으면 전송 직전에 다시 NFC 여부를 확인합니다.</small>
+            </span>
+          </label>
+
+          <label class="setting">
+            <input id="cancelSendOnFailure" name="cancelSendOnFailure" type="checkbox">
+            <span>
+              <strong>보정 실패 시 전송 차단</strong>
+              <small>정규화 실패가 있으면 메일 전송을 취소합니다.</small>
+            </span>
+          </label>
+
+          <label class="setting">
+            <input id="debugLogging" name="debugLogging" type="checkbox">
+            <span>
+              <strong>Debug logging</strong>
+              <small>background console에 code point와 attachment 상태를 자세히 기록합니다.</small>
+            </span>
+          </label>
+
+          <div class="actions">
+            <button type="submit">저장</button>
+            <button id="reset-button" type="button" class="secondary">기본값으로 되돌리기</button>
+            <button id="export-logs-button" type="button" class="secondary">로그 파일 저장</button>
+            <button id="clear-logs-button" type="button" class="ghost">로그 버퍼 비우기</button>
+          </div>
+        </form>
+      </section>
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </main>
+
+    <script type="module" src="./options.js"></script>
+  </body>
+</html>

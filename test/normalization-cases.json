@@ -1,0 +1,50 @@
+[
+  {
+    "label": "already-nfc-hangul",
+    "input": "한글.txt",
+    "expectedNfc": "한글.txt",
+    "shouldChange": false
+  },
+  {
+    "label": "nfd-hangul",
+    "input": "한글.txt",
+    "expectedNfc": "한글.txt",
+    "shouldChange": true
+  },
+  {
+    "label": "already-nfc-mixed",
+    "input": "보고서_최종본.pdf",
+    "expectedNfc": "보고서_최종본.pdf",
+    "shouldChange": false
+  },
+  {
+    "label": "nfd-mixed",
+    "input": "보고서_최종본.pdf",
+    "expectedNfc": "보고서_최종본.pdf",
+    "shouldChange": true
+  },
+  {
+    "label": "spaces-and-parens",
+    "input": "사진 (1).jpg",
+    "expectedNfc": "사진 (1).jpg",
+    "shouldChange": false
+  },
+  {
+    "label": "mixed-script",
+    "input": "가나다abc123.docx",
+    "expectedNfc": "가나다abc123.docx",
+    "shouldChange": false
+  },
+  {
+    "label": "accent-plus-hangul",
+    "input": "Résumé_한글.pdf",
+    "expectedNfc": "Résumé_한글.pdf",
+    "shouldChange": true
+  },
+  {
+    "label": "long-hangul-name",
+    "input": "아주 긴 한글 파일명 테스트용 샘플 v1 final.txt",
+    "expectedNfc": "아주 긴 한글 파일명 테스트용 샘플 v1 final.txt",
+    "shouldChange": false
+  }
+]
